@@ -16,8 +16,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 public class ShowInvitations extends AppCompatActivity
@@ -71,15 +69,6 @@ public class ShowInvitations extends AppCompatActivity
 
         mEditTextparticipants = findViewById(R.id.edit_participants);
 
-        Button add = findViewById(R.id.btn_addInvitation);
-        add.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                addItem();
-            }
-        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
