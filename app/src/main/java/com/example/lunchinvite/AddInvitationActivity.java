@@ -40,6 +40,11 @@ public class AddInvitationActivity extends AppCompatActivity {
             counter = savedInstanceState.getInt("counter");
         }
         setContentView(R.layout.activity_add_invitation);
+
+        InvitationsDBHelper dbHelper = new InvitationsDBHelper(this);
+        mDatabase = dbHelper.getWritableDatabase();
+        mAdapter = new InvitationsAdapter(this, getAllItems());
+
         Button add = findViewById(R.id.btn_addInvitation);
         add.setOnClickListener(new View.OnClickListener()
         {
@@ -65,6 +70,16 @@ public class AddInvitationActivity extends AppCompatActivity {
     }
 
     public void addItem() {
+
+        mEditTextday = findViewById(R.id.edit_day);
+        mEditTextmonth = findViewById(R.id.edit_month);
+        mEditTextyear = findViewById(R.id.edit_year);
+
+        mEditTexthour = findViewById(R.id.edit_hour);
+        mEditTextminute = findViewById(R.id.edit_minutes);
+
+        mEditTextparticipants = findViewById(R.id.edit_participants);
+
         if (mEditTextday.getText().toString().trim().length() == 0 || mEditTextmonth.getText().toString().trim().length() == 0 || mEditTextyear.getText().toString().trim().length() == 0 || mEditTexthour.getText().toString().trim().length() == 0 || mEditTextminute.getText().toString().trim().length() == 0 || mEditTextparticipants.getText().toString().trim().length() == 0)
         {
             return;
