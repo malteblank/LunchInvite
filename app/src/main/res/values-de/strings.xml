@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_drawer_open">Navigationsleiste öffnen</string>
+    <string name="navigation_drawer_close">Navigationsleiste schließen</string>
+    <string name="nav_header_desc">Überschrift Navigationsleiste</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_login">Einloggen</string>
+    <string name="prompt_email">E-Mail</string>
+    <string name="prompt_password">Passwort (optional)</string>
+    <string name="action_sign_in">Einloggen oder Registrieren</string>
+    <string name="action_sign_in_short">Einloggen</string>
+    <string name="error_invalid_email">Diese E-Mail Adresse ist ungültig</string>
+    <string name="error_invalid_password">Dieses Passwort ist zu kurz</string>
+    <string name="error_incorrect_password">Dieses Passwort ist falsch</string>
+    <string name="error_field_required">Dieses Feld ist ein Pflichtfeld</string>
+    <string name="permission_rationale">Zugriff auf Kontakte muss genehmigt sein, um E-Mail Autovervollständigung bereitzustellen.</string>
+    <string name="title_activity_add_invitation">Neue Einladung</string>
+    <string name="input_date">Datum</string>
+    <string name="input_time">Zeit</string>
+    <string name="input_participants">Teilnehmer</string>
+    <string name="nav_header_subtitle">Vereinbaren sie einfach Lunch-Termine!</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="pref_title_vibrate">Vibrieren</string>
+    <string name="pref_ringtone_silent">Lautlos</string>
+    <string name="pref_title_ringtone">Klingelton</string>
+    <string name="pref_title_new_message_notifications">Benachrichtigung bei neuer Nachricht</string>
+    <string name="pref_header_notifications">Benachrichtigungen</string>
+    <string name="pref_title_system_sync_settings">Systemsynchronisierungseinstellungen</string>
+    <string name="pref_title_sync_frequency">Synchronisierungsfrequenz</string>
+    <string name="pref_default_display_name">Max Mustermann</string>
+    <string name="pref_title_add_friends_to_messages">Füge Freunde zu Nachrichten hinzu</string>
+    <string name="pref_title_display_name">Anzeigename</string>
+    <string name="pref_header_general">Allgemein</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_newInvitations"
+            android:icon="@drawable/ic_add_circle_outline_black_black_24dp"
+            android:title="@string/title_activity_add_invitation" />
+        <item
+            android:id="@+id/nav_invitations"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="@string/title_show_invitations" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/action_settings" />
+    </group>
+
+    <item android:title="@string/drawer_second_subheading">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string name="nav_header_desc">Barre d\'en-tête Barre de navigation</string>
+    <string name="action_settings">Réglages</string>
+    <string name="title_activity_login">Ouvrir une session</string>
+    <string name="prompt_email">E-Mail</string>
+    <string name="prompt_password">Mot de passe (facultatif)</string>
+    <string name="action_sign_in">Ouvrir une session ou s\'inscrire</string>
+    <string name="action_sign_in_short">Ouvrir une session</string>
+    <string name="error_invalid_email">Cette adresse email n\'est pas valide</string>
+    <string name="error_invalid_password">Ce mot de passe est trop court</string>
+    <string name="error_incorrect_password">Ce mot de passe est incorrect</string>
+    <string name="error_field_required">Ce champ est obligatoire</string>
+    <string name="permission_rationale">Les permissions de contacts sont nécessaires pour fournir des complétions d\'email.</string>
+    <string name="title_activity_add_invitation">Ajouter une invitation</string>
+    <string name="input_time">Chronologique</string>
+    <string name="input_date">Sortir</string>
+    <string name="input_participants">Participants</string>
+    <string name="nav_header_subtitle">Il suffit de prendre rendez-vous pour un repas!</string>
+</resources>
