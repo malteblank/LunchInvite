@@ -23,7 +23,7 @@
         <LinearLayout
             android:id="@+id/parent_date"
             android:layout_width="match_parent"
-            android:layout_height="67dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
@@ -57,7 +57,7 @@
         <LinearLayout
             android:id="@+id/parent_time"
             android:layout_width="match_parent"
-            android:layout_height="59dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <EditText
@@ -66,9 +66,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:gravity="right"
                 android:hint="hh"
                 android:inputType="number"
-                android:gravity="right"
                 android:textAlignment="gravity" />
 
             <TextView
@@ -76,8 +76,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="  :  "
                 android:gravity="center"
+                android:text="  :  "
                 android:textAlignment="gravity" />
 
             <EditText
@@ -86,11 +86,42 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:gravity="left"
                 android:hint="mm"
                 android:inputType="number"
-                android:gravity="left"
                 android:textAlignment="gravity" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_participants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Participants"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_addInvitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="add" />
         </LinearLayout>
 
     </LinearLayout>

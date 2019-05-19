@@ -23,7 +23,7 @@
             <item
                 android:id="@+id/nav_profile"
                 android:icon="@drawable/ic_person_black_24dp"
-                android:title="Share" />
+                android:title="@string/title_show_profile" />
         </menu>
     </item>
 

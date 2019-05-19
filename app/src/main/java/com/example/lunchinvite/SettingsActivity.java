@@ -12,11 +12,12 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
-import android.support.v7.app.ActionBar;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.RingtonePreference;
+import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 
 import java.util.List;
@@ -33,6 +34,8 @@ import java.util.List;
  * API Guide</a> for more information on developing a Settings UI.
  */
 public class SettingsActivity extends AppCompatPreferenceActivity {
+
+    public int counter = 0;
 
     /**
      * A preference value change listener that updates the preference's summary
@@ -119,7 +122,48 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState != null)
+        {
+            counter = savedInstanceState.getInt("counter");
+        }
         setupActionBar();
+    }
+
+    @Override
+    protected void onSaveInstanceState (Bundle outState) {
+        outState.putInt("counter", counter);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+        counter = savedInstanceState.getInt("counter");
+    }
+
+    protected void onStart(Bundle savedInstanceState) {
+        super.onStart();
+        Log.d("started",getClass().getName());
+    }
+
+    protected void onPause(Bundle savedInstanceState) {
+        super.onPause();
+        Log.d("paused", getClass().getName());
+    }
+
+    protected void onDestroy(Bundle savedInstanceState) {
+        super.onDestroy();
+        Log.d("destroyed", getClass().getName());
+    }
+
+    protected void onRestart(Bundle savedInstanceState) {
+        super.onRestart();
+        Log.d("restarted", getClass().getName());
+    }
+
+    protected void onStop(Bundle savedInstanceState) {
+        super.onStop();
+        Log.d("stop", getClass().getName());
     }
 
     /**
