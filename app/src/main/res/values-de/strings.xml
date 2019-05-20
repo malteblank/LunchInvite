@@ -31,4 +31,9 @@
     <string name="pref_title_add_friends_to_messages">Füge Freunde zu Nachrichten hinzu</string>
     <string name="pref_title_display_name">Anzeigename</string>
     <string name="pref_header_general">Allgemein</string>
+    <string name="title_show_invitations">Meine Einladungen</string>
+    <string name="drawer_second_subheading">Profil</string>
+    <string name="title_activity_show_invitations">EInladungen anzeigen</string>
+    <string name="title_activity_profile">Profil</string>
+    <string name="title_show_profile">Profil</string>
 </resources>
