@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -59,6 +61,19 @@ public class ShowInvitations extends AppCompatActivity
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mAdapter = new InvitationsAdapter(this, getAllItems());
         recyclerView.setAdapter(mAdapter);
+
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder viewHolder1) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i)
+            {
+                removeItem((long) viewHolder.itemView.getTag());
+            }
+        }).attachToRecyclerView(recyclerView);
 
         mEditTextday = findViewById(R.id.edit_day);
         mEditTextmonth = findViewById(R.id.edit_month);
@@ -161,6 +176,13 @@ public class ShowInvitations extends AppCompatActivity
                 null,
                 InvitationsContract.RecyclerViewEntry.COLUMN_TIMESTAMP + " DESC"
         );
+    }
+
+    public void removeItem(long id)
+    {
+        mDatabase.delete(InvitationsContract.RecyclerViewEntry.TABLE_NAME,
+                InvitationsContract.RecyclerViewEntry._ID + " = " + id, null);
+        mAdapter.swapCursor(getAllItems());
     }
 
     @Override

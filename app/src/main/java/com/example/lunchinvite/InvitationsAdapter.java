@@ -55,10 +55,12 @@ public class InvitationsAdapter extends RecyclerView.Adapter<InvitationsAdapter.
         String date = mCursor.getString(mCursor.getColumnIndex(InvitationsContract.RecyclerViewEntry.COLUMN_DATE));
         String time = mCursor.getString(mCursor.getColumnIndex(InvitationsContract.RecyclerViewEntry.COLUMN_TIME));
         String participants = mCursor.getString(mCursor.getColumnIndex(InvitationsContract.RecyclerViewEntry.COLUMN_PARTICIPANTS));
+        long id = mCursor.getLong(mCursor.getColumnIndex(InvitationsContract.RecyclerViewEntry._ID));
 
         invitationsViewHolder.dateText.setText(date);
         invitationsViewHolder.timeText.setText(time);
         invitationsViewHolder.participantsText.setText(participants);
+        invitationsViewHolder.itemView.setTag(id);
     }
 
     @Override
