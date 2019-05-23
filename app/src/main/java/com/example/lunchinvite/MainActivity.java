@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity
         else if (id == R.id.nav_invitations)
         {
             startActivityForResult(new Intent(this, ShowInvitations.class), 1);
+            startActivity(new Intent(this, ShowInvitations.class));
             return true;
         }
         else if (id == R.id.nav_settings)

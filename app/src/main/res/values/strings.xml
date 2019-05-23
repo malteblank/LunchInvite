@@ -99,7 +99,10 @@
 
     <string name="title_show_invitations">My Invitations</string>
     <string name="drawer_second_subheading">Profile</string>
-    <string name="title_activity_show_invitations">ShowInvitations</string>
+    <string name="title_activity_show_invitations">My Invitations</string>
     <string name="title_activity_profile">Profile</string>
     <string name="title_show_profile">Profile</string>
+    <string name="info_delete">To delete entries, just swipe one item away.</string>
+    <string name="info_alert">To set alerts, just tap on one item.</string>
+    <string name="title_activity_settings2">SettingsActivity2</string>
 </resources>

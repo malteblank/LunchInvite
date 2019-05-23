@@ -75,15 +75,6 @@ public class ShowInvitations extends AppCompatActivity
             }
         }).attachToRecyclerView(recyclerView);
 
-        mEditTextday = findViewById(R.id.edit_day);
-        mEditTextmonth = findViewById(R.id.edit_month);
-        mEditTextyear = findViewById(R.id.edit_year);
-
-        mEditTexthour = findViewById(R.id.edit_hour);
-        mEditTextminute = findViewById(R.id.edit_minutes);
-
-        mEditTextparticipants = findViewById(R.id.edit_participants);
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -174,7 +165,7 @@ public class ShowInvitations extends AppCompatActivity
                 null,
                 null,
                 null,
-                InvitationsContract.RecyclerViewEntry.COLUMN_TIMESTAMP + " DESC"
+                null
         );
     }
 

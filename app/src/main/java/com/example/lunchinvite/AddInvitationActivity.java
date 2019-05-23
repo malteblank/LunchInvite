@@ -32,7 +32,7 @@ public class AddInvitationActivity extends AppCompatActivity {
     public String mInvitationParticipants = "";
 
 
-    //Datenbank anzeigen
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -33,7 +33,9 @@
     <string name="pref_header_general">Allgemein</string>
     <string name="title_show_invitations">Meine Einladungen</string>
     <string name="drawer_second_subheading">Profil</string>
-    <string name="title_activity_show_invitations">EInladungen anzeigen</string>
+    <string name="title_activity_show_invitations">Einladungen anzeigen</string>
     <string name="title_activity_profile">Profil</string>
     <string name="title_show_profile">Profil</string>
+    <string name="info_delete">Um Einträge zu löschen, kannst du den Eintrag einfach aus dem Bildschirm raus swipen.</string>
+    <string name="info_alert">Um eine Benachrichtigung für einen Eintrag zu erstellen, kannst du einfach auf den Eintrag tippen.</string>
 </resources>

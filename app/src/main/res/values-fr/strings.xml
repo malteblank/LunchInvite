@@ -36,4 +36,6 @@
     <string name="title_show_profile">Baguette</string>
     <string name="title_activity_settings">Baguette</string>
     <string name="pref_header_general">Baguette</string>
+    <string name="info_delete">Baguette</string>
+    <string name="info_alert">Baguette</string>
 </resources>
