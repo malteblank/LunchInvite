@@ -14,9 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SettingsActivity2"
-            android:label="@string/title_activity_settings2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".Profile"
             android:label="@string/title_activity_profile"
@@ -25,14 +30,6 @@
             android:name=".ShowInvitations"
             android:label="@string/title_activity_show_invitations"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
         <activity
             android:name=".AddInvitationActivity"
             android:label="@string/title_activity_add_invitation"

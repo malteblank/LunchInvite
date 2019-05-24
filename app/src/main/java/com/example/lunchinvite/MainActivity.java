@@ -3,6 +3,7 @@ package com.example.lunchinvite;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -117,13 +118,19 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.nav_profile)
         {
-            startActivityForResult(new Intent(this, Profile.class), 1);
+            //startActivityForResult(new Intent(this, MainActivity.class), 1);
             return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("successfully executed", data.getClass().getName());
     }
 
     @Override

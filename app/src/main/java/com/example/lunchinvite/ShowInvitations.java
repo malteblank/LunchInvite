@@ -217,22 +217,22 @@ public class ShowInvitations extends AppCompatActivity
 
         if (id == R.id.nav_newInvitations)
         {
-            startActivity(new Intent(this, AddInvitationActivity.class));
+            startActivityForResult(new Intent(this, AddInvitationActivity.class), 1);
             return true;
         }
         else if (id == R.id.nav_invitations)
         {
-            startActivity(new Intent(this, ShowInvitations.class));
+            startActivityForResult(new Intent(this, ShowInvitations.class), 1);
             return true;
         }
         else if (id == R.id.nav_settings)
         {
-            startActivity(new Intent(this, SettingsActivity.class));
+            startActivityForResult(new Intent(this, SettingsActivity.class), 1);
             return true;
         }
         else if (id == R.id.nav_profile)
         {
-            startActivity(new Intent(this, Profile.class));
+            startActivityForResult(new Intent(this, MainActivity.class), 1);
             return true;
         }
 

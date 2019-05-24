@@ -19,23 +19,12 @@
     <string name="input_date">Sortir</string>
     <string name="input_participants">Participants</string>
     <string name="nav_header_subtitle">Il suffit de prendre rendez-vous pour un repas!</string>
-    <string name="pref_title_display_name">Baguette</string>
-    <string name="pref_default_display_name">Baguette</string>
-    <string name="pref_title_add_friends_to_messages">Baguette</string>
-    <string name="pref_title_sync_frequency">Baguette</string>
-    <string name="pref_title_system_sync_settings">Baguette</string>
-    <string name="pref_header_notifications">Baguette</string>
-    <string name="pref_title_new_message_notifications">Baguette</string>
-    <string name="pref_title_ringtone">Baguette</string>
-    <string name="pref_ringtone_silent">Baguette</string>
-    <string name="pref_title_vibrate">Baguette</string>
     <string name="title_show_invitations">Baguette</string>
-    <string name="drawer_second_subheading">Baguette</string>
+    <string name="drawer_second_subheading">Main</string>
     <string name="title_activity_show_invitations">Baguette</string>
     <string name="title_activity_profile">Baguette</string>
-    <string name="title_show_profile">Baguette</string>
+    <string name="title_show_profile">Main</string>
     <string name="title_activity_settings">Baguette</string>
-    <string name="pref_header_general">Baguette</string>
     <string name="info_delete">Baguette</string>
     <string name="info_alert">Baguette</string>
 </resources>

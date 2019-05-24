@@ -3,7 +3,7 @@
     <string name="navigation_drawer_open">Navigationsleiste öffnen</string>
     <string name="navigation_drawer_close">Navigationsleiste schließen</string>
     <string name="nav_header_desc">Überschrift Navigationsleiste</string>
-    <string name="action_settings">Einstellungen</string>
+    <string name="action_settings">Benachrichtigungszeit ändern</string>
     <string name="title_activity_login">Einloggen</string>
     <string name="prompt_email">E-Mail</string>
     <string name="prompt_password">Passwort (optional)</string>
@@ -19,23 +19,12 @@
     <string name="input_time">Zeit</string>
     <string name="input_participants">Teilnehmer</string>
     <string name="nav_header_subtitle">Vereinbaren sie einfach Lunch-Termine!</string>
-    <string name="title_activity_settings">Einstellungen</string>
-    <string name="pref_title_vibrate">Vibrieren</string>
-    <string name="pref_ringtone_silent">Lautlos</string>
-    <string name="pref_title_ringtone">Klingelton</string>
-    <string name="pref_title_new_message_notifications">Benachrichtigung bei neuer Nachricht</string>
-    <string name="pref_header_notifications">Benachrichtigungen</string>
-    <string name="pref_title_system_sync_settings">Systemsynchronisierungseinstellungen</string>
-    <string name="pref_title_sync_frequency">Synchronisierungsfrequenz</string>
-    <string name="pref_default_display_name">Max Mustermann</string>
-    <string name="pref_title_add_friends_to_messages">Füge Freunde zu Nachrichten hinzu</string>
-    <string name="pref_title_display_name">Anzeigename</string>
-    <string name="pref_header_general">Allgemein</string>
     <string name="title_show_invitations">Meine Einladungen</string>
-    <string name="drawer_second_subheading">Profil</string>
+    <string name="drawer_second_subheading">Hauptseite</string>
     <string name="title_activity_show_invitations">Einladungen anzeigen</string>
     <string name="title_activity_profile">Profil</string>
-    <string name="title_show_profile">Profil</string>
+    <string name="title_show_profile">Hauptseite</string>
     <string name="info_delete">Um Einträge zu löschen, kannst du den Eintrag einfach aus dem Bildschirm raus swipen.</string>
     <string name="info_alert">Um eine Benachrichtigung für einen Eintrag zu erstellen, kannst du einfach auf den Eintrag tippen.</string>
+    <string name="title_activity_settings">Benachrichtigungszeit ändern</string>
 </resources>

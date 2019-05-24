@@ -40,7 +40,7 @@ public class NotificationHelper extends ContextWrapper
     public NotificationCompat.Builder getChannelNotification() {
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("Termin-Erinnerung")
-                .setContentText("In " + "" + " Minuten beginnt dein Termin")
+                .setContentText("In " + Integer.toString(SettingsActivity.getNotificationTime(this)) + " Minuten beginnt dein Termin")
                 .setSmallIcon(R.drawable.ic_event_available_black_24dp);
     }
 }
